@@ -1,0 +1,33 @@
+{% extends 'enterprise/pat.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Информация</title>
+    </head>
+    <body>
+            {% block b1 %}Информация{% endblock %}
+            {% block b2 %}
+            {% include 'enterprise/common.html' %}
+            <div class="features">
+                <h1>Информация Enterprise</h1>
+                <p>
+                    Торговое предприятие Enterprise - ведущая компания, которая специализируется на поставке качественных товаров и услуг высокого уровня. С момента своего основания в 2001 году, Enterprise стремится удовлетворить потребности клиентов и стать надежным партнером в бизнесе.
+                </p>
+                <p>
+                    Enterprise предлагает широкий спектр продуктов от ведущих мировых брендов. Мы заботимся о качестве каждого товара, чтобы наши клиенты получили только лучшее.
+                </p>
+                <p>
+                    За многие годы работы на рынке, Enterprise смогла завоевать доверие и признание как со стороны клиентов, так и со стороны партнеров. Наш профессионализм и надежность помогли нам стать одним из лидеров отрасли.
+                </p>
+                <p>
+                    Если вы ищете надежного партнера для вашего бизнеса или нуждаетесь в качественных товарах по выгодным ценам, обратитесь в Enterprise - ваш путь к успеху!
+                </p>
+                <img src="{% static 'enterprise/img/Knauf.png' %}" alt="Knauf" style="width: 80px; height: 30px; margin-top: 20px;">
+                <img src="{% static 'enterprise/img/Makita.png' %}" alt="Makita" style="width: 80px; height: 25px; margin-top: 20px;">
+                <img src="{% static 'enterprise/img/bosch.png' %}" alt="bosch" style="width: 80px; height: 20px; margin-top: 20px;">
+            </div>
+            {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Create</title>
+    </head>
+    <body>
+        {% extends 'enterprise/pat.html' %}
+        {% block b1 %}Добавление товара{% endblock %}
+        {% block b2 %}
+        {% include 'enterprise/common.html' %}
+        <div class="features">
+            <h1>Добавь товар</h1>
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.name_product }} <br>
+                {{ form.description }} <br>
+                {{ form.price }} <br>
+                {{ form.quantity }} <br>
+                {{ form.image }} <br>
+                {{ form.category }} <br>
+                <span>{{ error }}</span>
+                {{ form.errors }}
+                <button type="submit" class="btn btn-outline-dark">Create</button>
+            </form>
+        </div>
+        {% endblock %}
+    </body>
+</html>

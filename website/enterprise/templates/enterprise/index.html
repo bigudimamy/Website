@@ -1,0 +1,28 @@
+<!doctype html>
+{% extends 'enterprise/pat.html' %}
+{% load static %}
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Enterprise</title>
+    </head>
+    <body>
+        {% block b1 %}Главная{% endblock %}
+        {% block b2 %}
+        {% include 'enterprise/common.html' %}
+        <div class="features">
+            <h1>Enterprise</h1>
+            <p>
+                Торговое предприятие Enterprise - ведущая компания, которая специализируется на поставке качественных товаров и услуг высокого уровня. С момента своего основания в 2001 году, Enterprise стремится удовлетворить потребности клиентов и стать надежным партнером в бизнесе.
+            </p>
+            <img src="{% static 'enterprise/img/img1.jpg' %}" alt="img1" style="width: 800px; height: 500px; margin-top: 20px;">
+            <p>Мы предлагаем широкий спектр товаров!</p>
+            <img src="{% static 'enterprise/img/img2.jpg' %}" alt="img2" style="width: 600px; height: 400px; margin-top: 20px;">
+            <p>Нам Доверяют с 2001 года!</p>
+        </div>
+        {% endblock %}
+    </body>
+</html>

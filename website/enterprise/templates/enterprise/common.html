@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Common</title>
+    </head>
+    <body>
+        <div class="common">
+            {% if user.is_authenticated %}
+                    <form action="{% url 'logout' %}" method="post">
+                      <h5>Пользователь: {{ user.username }}</h5>
+                      {% csrf_token %}
+                        <a href="{% url 'logout' %}"><button type="submit" class="btn btn-outline-dark">Log out</button></a>
+                    </form>
+            {% else %}
+            <a href="{% url 'login' %}"><button type="button" class="btn btn-outline-dark" id="open-login-button">Log in</button></a>
+                <a href="{% url 'register' %}"><button type="button" class="btn btn-outline-dark" id="open-registration-button">Registration</button></a>
+            {% endif %}
+        </div>
+    </body>
+</html>
