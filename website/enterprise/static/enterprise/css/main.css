@@ -1,0 +1,157 @@
+body {
+    background: #E4E4E4;
+    color: #000;
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+aside {
+    float: left;
+    background: #415380;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #E4E4E4;
+}
+
+aside img {
+    width: 80px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 22px;
+    margin-left: 10px;
+    position: relative;
+    top: 30px;
+}
+
+aside h4 {
+    position: relative;
+    top: 30px;
+}
+
+aside ul {
+    list-style: none;
+    position: relative;
+    top: 30px;
+}
+
+aside ul li {
+    color: #E4E4E4;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+aside ul a {
+    text-decoration: none;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #AEE5D1;
+    text-decoration: none;
+    transform: scale(1.25);
+}
+
+aside .contact {
+    float: left;
+    margin-top: 40vh;
+    text-align: center;
+    width: 90%;
+}
+
+aside .contact p {
+    font-size: 12px
+}
+
+main .features {
+    float: left;
+    color: #000;
+    margin-top: 25px;
+    text-align: center;
+    width: 75%;
+    height: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+main .features h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+main .features p {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+main .features ul {
+    list-style: none;
+}
+
+main .common {
+    float: left;
+    margin-top: 10px;
+    text-align: right;
+    width: 75%;
+    font-size: 15px;
+}
+
+.btn-outline-dark{
+    background-color: #E4E4E4;
+    color: #415380;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus,
+.btn-outline-dark:visited {
+    background-color: #415380;
+    color: #AEE5D1;
+}
+
+.category {
+    float:left;
+    width: 400px;
+    clear: both;
+    margin: 24px 34%;
+    text-align: left;
+    display: block;
+}
+
+.btn-outline-dark-2{
+    font-size: 16px;
+    background-color: #E4E4E4;
+    color: #415380;
+}
+
+.btn-outline-dark-2:hover,
+.btn-outline-dark-2:focus,
+.btn-outline-dark-2:visited {
+    font-size: 16px;
+    background-color: #AEE5D1;
+    color: #415380;
+}
+
+.product-image {
+  width: 70px;
+  height: 70px;
+}
+
+form .form-control{
+    margin-left: 22%;
+    width: 600px;
+}
+
+input {
+    margin-top: 20px;
+}
+
+/* Для WebKit-браузеров */
+::-webkit-scrollbar {
+  width: 0; /* Ширина скроллбара */
+  background-color: #FFFFFF; /* Цвет фона скроллбара */
+}
