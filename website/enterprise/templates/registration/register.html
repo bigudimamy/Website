@@ -1,0 +1,29 @@
+{% extends 'enterprise/pat.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration</title>
+    </head>
+    <body>
+        {% block b1 %}Регистрация{% endblock %}
+        {% block b2 %}
+        <div class="features">
+            <h1>Registration Form</h1>
+            <form method="post" action="{% url 'register' %}">
+                {% csrf_token %}
+                <p>Username</p>
+                {{ form.username }} <br>
+                <p>Password</p>
+                {{ form.password1 }} <br>
+                <p>Confirm Password</p>
+                {{ form.password2 }} <br>
+                <p>Email</p>
+                {{ form.email }} <br>
+                <input type="submit" value="Register" class="btn btn-outline-dark">
+            </form>
+        </div>
+        {% endblock %}
+    </body>
+</html>
